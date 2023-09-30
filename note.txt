@@ -1,0 +1,13 @@
+btns.forEach((elements) => {
+  if (operatorClick == 0) {
+    elements.addEventListener("click", () => {
+      leftScreen += elements.value;
+      console.log("leftScreen:", leftScreen);
+    });
+  } else {
+    elements.addEventListener("click", () => {
+      rightScreen += elements.value;
+      console.log(rightScreen);
+    });
+  }
+});
